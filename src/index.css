@@ -1,0 +1,695 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff8fb;
+  color: #3d3340;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hero-section {
+  padding: 80px 0;
+  background: linear-gradient(
+    135deg,
+    #fff1f6,
+    #f7efff
+  );
+}
+
+.hero-section h1 {
+  font-size: 55px;
+  font-weight: 700;
+  color: #3d3340;
+}
+
+.hero-small {
+  letter-spacing: 3px;
+  font-size: 14px;
+  color: #a45b7a;
+  font-weight: bold;
+}
+
+.hero-image {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+.category-card {
+  display: block;
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+  color: #3d3340;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.category-card:hover {
+  transform: translateY(-7px);
+}
+
+.category-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.category-card div {
+  padding: 15px;
+  font-weight: bold;
+}
+
+.product-card {
+  overflow: hidden;
+  border-radius: 18px !important;
+  transition: 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-image-wrapper {
+  position: relative;
+  height: 300px;
+  background: #fafafa;
+}
+
+.product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.discount-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #e85d8e;
+  color: white;
+  padding: 7px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  z-index: 2;
+}
+
+.product-category {
+  color: #a45b7a;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.price-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.current-price {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.old-price {
+  color: #999;
+  text-decoration: line-through;
+}
+
+.details-image-wrapper {
+  position: relative;
+  height: 500px;
+  background: #fafafa;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.details-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.form-container {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+}
+
+.contact-card {
+  background: white;
+  padding: 30px;
+  text-align: center;
+  border-radius: 18px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.footer {
+  background: #3d3340;
+  color: white;
+  padding: 35px 0 15px;
+  margin-top: 50px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.footer-info {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer a {
+  color: white;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.2);
+  margin-top: 25px;
+  padding-top: 15px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 50px 0;
+  }
+
+  .hero-section h1 {
+    font-size: 38px;
+  }
+
+  .hero-image {
+    height: 320px;
+  }
+
+  .details-image-wrapper {
+    height: 350px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-info {
+    flex-direction: column;
+    text-align: center;
+  }
+}/* PRODUCTS */
+
+.products-page {
+  background: linear-gradient(
+    135deg,
+    #eefaff 0%,
+    #f7f0ff 50%,
+    #ecfff8 100%
+  );
+  min-height: 100vh;
+}
+
+.products-title {
+  color: #55406f;
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.products-subtitle {
+  color: #777;
+  font-size: 17px;
+}
+
+.product-card {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(170, 150, 200, 0.15);
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(100, 80, 130, 0.12);
+  transition: 0.35s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(100, 80, 130, 0.2);
+}
+
+.product-image-wrapper {
+  height: 300px;
+  background: linear-gradient(
+    135deg,
+    #f0fbff,
+    #f8f1ff,
+    #effff9
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 20px;
+  transition: 0.4s ease;
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.07);
+}
+
+.discount-badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 2;
+  background: linear-gradient(
+    135deg,
+    #9b6cff,
+    #35cdb0
+  );
+  color: white;
+  padding: 7px 13px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 700;
+  box-shadow: 0 5px 15px rgba(100, 80, 150, 0.25);
+}
+
+.product-card-body {
+  padding: 24px;
+}
+
+.product-category {
+  color: #38a98f;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.product-name {
+  color: #40354d;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 8px 0;
+}
+
+.product-description {
+  color: #777;
+  font-size: 14px;
+  min-height: 42px;
+}
+
+.product-price {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 18px 0;
+}
+
+.current-price {
+  color: #7352a8;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.old-price {
+  color: #999;
+  font-size: 16px;
+  text-decoration: line-through;
+}
+
+.product-button {
+  display: block;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(
+    135deg,
+    #8c6bd9,
+    #39bda3
+  );
+  padding: 12px;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.product-button:hover {
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(100, 80, 150, 0.25);
+}
+
+@media (max-width: 768px) {
+  .products-title {
+    font-size: 32px;
+  }
+
+  .product-image-wrapper {
+    height: 260px;
+  }
+}
+/* =====================================
+   ELENE BEAUTY NAVBAR
+===================================== */
+
+.navbar-wrapper {
+  width: 100%;
+  background: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  box-shadow: 0 4px 25px rgba(80, 60, 100, 0.10);
+}
+
+/* ზედა ზოლი */
+
+.navbar-top {
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    #eafaff,
+    #f3edff,
+    #eafff8
+  );
+  border-bottom: 1px solid #eee7f5;
+}
+
+.navbar-container {
+  width: min(1200px, 92%);
+  margin: 0 auto;
+}
+
+.navbar-top-inner {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-settings {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.navbar-select {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.navbar-select select {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #57476d;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.navbar-cart {
+  color: #57476d;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.navbar-cart:hover {
+  color: #3cae99;
+}
+
+/* მთავარი Navbar */
+
+.navbar-main {
+  background: #ffffff;
+}
+
+.navbar-main-inner {
+  min-height: 78px;
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+/* ლოგო */
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #6b4fa0;
+  font-size: 25px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.logo-icon {
+  color: #8e70d1;
+  font-size: 28px;
+}
+
+/* მენიუ */
+
+.navbar-navigation {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: auto;
+}
+
+.navbar-link,
+.navbar-category-button,
+.navbar-login {
+  border: none;
+  background: transparent;
+  text-decoration: none;
+  color: #51485b;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 11px 13px;
+  border-radius: 10px;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.navbar-link:hover,
+.navbar-category-button:hover {
+  color: #7354a5;
+  background: #f2edff;
+}
+
+.navbar-login {
+  background: linear-gradient(
+    135deg,
+    #8d70d2,
+    #42bda4
+  );
+  color: white;
+  margin-left: 5px;
+}
+
+.navbar-login:hover {
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 7px 18px rgba(100, 80, 150, 0.25);
+}
+
+/* კატეგორიები */
+
+.navbar-category {
+  position: relative;
+}
+
+.navbar-category-button {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.navbar-category-button span {
+  font-size: 18px;
+}
+
+.navbar-dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  width: 245px;
+  padding: 10px;
+  background: white;
+  border: 1px solid #eee5f6;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(70, 50, 100, 0.18);
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+
+  transition: all 0.25s ease;
+}
+
+.navbar-category:hover .navbar-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.navbar-dropdown a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 13px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #51485b;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.navbar-dropdown a:hover {
+  background: linear-gradient(
+    90deg,
+    #f1f9ff,
+    #f5efff
+  );
+  color: #7354a5;
+  transform: translateX(4px);
+}
+
+/* ძებნა */
+
+.navbar-search {
+  width: 190px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 13px;
+  box-sizing: border-box;
+
+  background: #f8f6ff;
+  border: 1px solid #e9e2f5;
+  border-radius: 22px;
+
+  transition: 0.3s;
+}
+
+.navbar-search:focus-within {
+  border-color: #a68ad9;
+  box-shadow: 0 0 0 3px rgba(166, 138, 217, 0.12);
+}
+
+.navbar-search span {
+  color: #8067a5;
+  font-size: 22px;
+}
+
+.navbar-search input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #51485b;
+  font-size: 13px;
+}
+
+.navbar-search input::placeholder {
+  color: #9a92a2;
+}
+
+/* Responsive */
+
+@media (max-width: 1100px) {
+  .navbar-main-inner {
+    gap: 15px;
+  }
+
+  .navbar-navigation {
+    gap: 0;
+  }
+
+  .navbar-link,
+  .navbar-category-button,
+  .navbar-login {
+    padding: 9px 8px;
+    font-size: 13px;
+  }
+
+  .navbar-search {
+    width: 150px;
+  }
+}
+
+@media (max-width: 900px) {
+  .navbar-main-inner {
+    flex-wrap: wrap;
+    padding: 15px 0;
+  }
+
+  .navbar-navigation {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .navbar-search {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar-top-inner {
+    padding: 6px 0;
+  }
+
+  .navbar-settings {
+    gap: 8px;
+  }
+
+  .navbar-select select {
+    font-size: 11px;
+  }
+
+  .navbar-cart {
+    font-size: 12px;
+  }
+
+  .navbar-logo {
+    font-size: 21px;
+  }
+
+  .navbar-navigation {
+    overflow-x: auto;
+    justify-content: flex-start;
+  }
+
+  .navbar-search {
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  .navbar-dropdown {
+    left: -50px;
+  }
+}
