@@ -209,7 +209,7 @@ a {
     flex-direction: column;
     text-align: center;
   }
-}/* PRODUCTS */
+}
 
 .products-page {
   background: linear-gradient(
@@ -365,9 +365,7 @@ a {
     height: 260px;
   }
 }
-/* =====================================
-   ELENE BEAUTY NAVBAR
-===================================== */
+
 
 .navbar-wrapper {
   width: 100%;
@@ -378,7 +376,7 @@ a {
   box-shadow: 0 4px 25px rgba(80, 60, 100, 0.10);
 }
 
-/* ზედა ზოლი */
+
 
 .navbar-top {
   width: 100%;
@@ -437,7 +435,7 @@ a {
   color: #3cae99;
 }
 
-/* მთავარი Navbar */
+
 
 .navbar-main {
   background: #ffffff;
@@ -450,7 +448,7 @@ a {
   gap: 35px;
 }
 
-/* ლოგო */
+
 
 .navbar-logo {
   display: flex;
@@ -468,7 +466,7 @@ a {
   font-size: 28px;
 }
 
-/* მენიუ */
+
 
 .navbar-navigation {
   display: flex;
@@ -514,7 +512,7 @@ a {
   box-shadow: 0 7px 18px rgba(100, 80, 150, 0.25);
 }
 
-/* კატეგორიები */
+
 
 .navbar-category {
   position: relative;
@@ -577,7 +575,7 @@ a {
   transform: translateX(4px);
 }
 
-/* ძებნა */
+
 
 .navbar-search {
   width: 190px;

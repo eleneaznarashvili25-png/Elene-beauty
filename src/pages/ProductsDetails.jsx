@@ -149,7 +149,7 @@ function ProductsDetails() {
       price: 12,
       oldPrice: 20,
       discount: 40,
-      image: "/images/nail-lacquer-1.jpg",
+      image: "/images/NailLacquer-1.jpg",
       description:
         "კლასიკური წითელი ფერის ფრჩხილის ლაქი ლამაზი და ელეგანტური მანიკიურისთვის.",
     },
@@ -160,7 +160,7 @@ function ProductsDetails() {
       price: 12,
       oldPrice: 18,
       discount: 30,
-      image: "/images/nail-lacquer-2.jpg",
+      image: "/images/NailLacquer-2.jpg",
       description:
         "ნაზი ვარდისფერი ფერის ფრჩხილის ლაქი ყოველდღიური და დახვეწილი სტილისთვის.",
     },
@@ -171,7 +171,7 @@ function ProductsDetails() {
       price: 12,
       oldPrice: 24,
       discount: 50,
-      image: "/images/nail-lacquer-3.jpg",
+      image: "/images/NailLacquer-3.jpg",
       description:
         "ბუნებრივი ნუდისფერი ლაქი მინიმალისტური და ელეგანტური მანიკიურისთვის.",
     },
@@ -183,7 +183,7 @@ function ProductsDetails() {
       price: 35,
       oldPrice: 50,
       discount: 30,
-      image: "/images/eyeshadow-1.jpg",
+      image: "/images/Eyeshadow-1.jpg",
       description:
         "ნუდისფერ ტონებში შექმნილი თვალის ჩრდილების პალიტრა ყოველდღიური მაკიაჟისთვის.",
     },
@@ -194,7 +194,7 @@ function ProductsDetails() {
       price: 30,
       oldPrice: 40,
       discount: 25,
-      image: "/images/eyeshadow-2.jpg",
+      image: "/images/Eyeshadow-2.jpg",
       description:
         "ვარდისფერ ტონებში შექმნილი თვალის ჩრდილების პალიტრა ლამაზი და ნაზი მაკიაჟისთვის.",
     },
@@ -205,10 +205,44 @@ function ProductsDetails() {
       price: 25,
       oldPrice: 50,
       discount: 50,
-      image: "/images/eyeshadow-3.jpg",
+      image: "/images/Eyeshadow-3.jpg",
       description:
         "ფერადი თვალის ჩრდილების მრავალფეროვანი პალიტრა კრეატიული მაკიაჟისთვის.",
     },
+  {id: 19,
+   name: "Golden Rose Velvet Matte Lipstick",
+   category: "Lipstick",
+   price: 25,
+   oldPrice: 40,
+   discount: 38,
+   image: "/images/lipstick-1.jpg",
+   description:
+  "Golden Rose-ის მქრქალი პომადა ინტენსიური ფერით, რომელიც ტუჩებს ლამაზ და ხანგრძლივ ეფექტს ანიჭებს."
+  },
+  {
+  id: 20,
+name: "Golden Rose Longstay Lipstick",
+category: "Lipstick",
+price: 28,
+oldPrice: 45,
+discount: 38,
+image: "/images/lipstick-2.jpg",
+description:
+  "ხანგრძლივი ეფექტის მქონე Golden Rose-ის პომადა, რომელიც ტუჩებზე თანაბრად ნაწილდება და მდიდარ ფერს ქმნის."
+  },
+
+{
+
+  id: 21,
+name: "Golden Rose Nude Lipstick",
+category: "Lipstick",
+price: 22,
+oldPrice: 35,
+discount: 37,
+image: "/images/lipstick-3.jpg",
+description:
+  "Golden Rose-ის ნაზი ნიუდისფერი პომადა ყოველდღიური მაკიაჟისთვის, რომელიც ტუჩებს ბუნებრივ და დახვეწილ იერს აძლევს."
+}
   ];
 
   const product = products.find(
