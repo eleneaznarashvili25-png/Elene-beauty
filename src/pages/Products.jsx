@@ -260,7 +260,7 @@ function Products() {
     apiFilteredProducts = [];
   }
 
-  // Golden Rose პროდუქტების დალაგება
+  
   if (sort === "low") {
     filteredProducts.sort((a, b) => a.price - b.price);
   }
@@ -273,7 +273,7 @@ function Products() {
     filteredProducts.sort((a, b) => b.discount - a.discount);
   }
 
-  // API პროდუქტების დალაგება
+ 
   if (sort === "low") {
     apiFilteredProducts.sort((a, b) => a.price - b.price);
   }
@@ -282,7 +282,7 @@ function Products() {
     apiFilteredProducts.sort((a, b) => b.price - a.price);
   }
 
-  // Wishlist
+  
   const toggleWishlist = (id) => {
     if (wishlist.includes(id)) {
       setWishlist(wishlist.filter((item) => item !== id));
@@ -291,7 +291,7 @@ function Products() {
     }
   };
 
-  // კალათაში დამატება
+  
   const addToCart = (product) => {
     setCart([...cart, product]);
 
@@ -305,7 +305,7 @@ function Products() {
     }, 2500);
   };
 
-  // ყველა ნაჩვენები პროდუქტის რაოდენობა
+  
   const totalProducts =
     filteredProducts.length +
     apiFilteredProducts.length;
@@ -313,7 +313,7 @@ function Products() {
   return (
     <main className="container py-5">
 
-      {/* შეტყობინება */}
+      
       {message && (
         <div
           className="alert alert-success text-center position-fixed"
@@ -328,7 +328,7 @@ function Products() {
         </div>
       )}
 
-      {/* სათაური */}
+      
       <div className="text-center mb-5">
         <h1 className="fw-bold">
           {selectedCategory || "პროდუქტები"}
@@ -339,7 +339,7 @@ function Products() {
         </p>
       </div>
 
-      {/* ძებნა და დალაგება */}
+      
       <div className="row mb-4 g-3">
 
         <div className="col-md-7">
@@ -378,7 +378,7 @@ function Products() {
 
       </div>
 
-      {/* API Loading */}
+      
       {apiLoading && (
         <div className="text-center mb-4">
           <div
@@ -396,24 +396,24 @@ function Products() {
         </div>
       )}
 
-      {/* API Error */}
+      
       {apiError && (
         <div className="alert alert-warning text-center">
           {apiError}
         </div>
       )}
 
-      {/* შედეგების რაოდენობა */}
+      
       <div className="mb-4 text-secondary">
         ნაპოვნია:{" "}
         <strong>{totalProducts}</strong>{" "}
         პროდუქტი
       </div>
 
-      {/* პროდუქტები */}
+      
       <div className="row g-4">
 
-        {/* Golden Rose პროდუქტები */}
+        
         {filteredProducts.map((product) => (
 
           <div
@@ -429,7 +429,7 @@ function Products() {
               }}
             >
 
-              {/* Wishlist */}
+             
               <button
                 onClick={() =>
                   toggleWishlist(product.id)
@@ -456,7 +456,7 @@ function Products() {
                   : "♡"}
               </button>
 
-              {/* ფოტო */}
+             
               <div
                 style={{
                   height: "300px",
@@ -489,7 +489,7 @@ function Products() {
                   }}
                 />
 
-                {/* ფასდაკლება */}
+               
                 <span
                   style={{
                     position: "absolute",
@@ -508,7 +508,7 @@ function Products() {
 
               </div>
 
-              {/* ინფორმაცია */}
+              
               <div className="card-body d-flex flex-column">
 
                 <small className="text-secondary">
@@ -521,7 +521,7 @@ function Products() {
 
                 <div className="mt-auto">
 
-                  {/* ფასები */}
+                  
                   <div className="mb-3">
 
                     <span
@@ -546,7 +546,7 @@ function Products() {
 
                   </div>
 
-                  {/* კალათაში დამატება */}
+                 
                   <button
                     onClick={() =>
                       addToCart(product)
@@ -564,7 +564,7 @@ function Products() {
                     🛒 კალათაში დამატება
                   </button>
 
-                  {/* დეტალები */}
+                  
                   <Link
                     to={`/product/${product.id}`}
                     className="btn btn-outline-dark w-100"
@@ -585,7 +585,6 @@ function Products() {
 
         ))}
 
-        {/* API პროდუქტები */}
         {apiFilteredProducts.map((product) => (
 
           <div
@@ -601,7 +600,7 @@ function Products() {
               }}
             >
 
-              {/* API badge */}
+              
               <span
                 style={{
                   position: "absolute",
@@ -620,7 +619,7 @@ function Products() {
                 API
               </span>
 
-              {/* ფოტო */}
+             
               <div
                 style={{
                   height: "300px",
@@ -654,7 +653,7 @@ function Products() {
 
               </div>
 
-              {/* ინფორმაცია */}
+              
               <div className="card-body d-flex flex-column">
 
                 <small className="text-secondary">
@@ -685,7 +684,7 @@ function Products() {
                     {product.price} ₾
                   </strong>
 
-                  {/* კალათაში დამატება */}
+                  
                   <button
                     onClick={() =>
                       addToCart(product)
@@ -733,7 +732,7 @@ function Products() {
 
       </div>
 
-      {/* ვერ მოიძებნა */}
+      
       {!apiLoading &&
         totalProducts === 0 && (
           <div className="text-center py-5">
